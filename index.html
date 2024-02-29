@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b494771af3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#sar">About</a></li>
+                    <li><a href="#mar">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#par">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Parvez</span> <br> Ahmed From Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+
+<!--About section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" id="sar">About Me</h1>
+                    <p class="pa">
+                        
+                        As a web developer, my primary role involves designing, creating, and maintaining websites. I utilize programming languages such as HTML, CSS, and JavaScript to build interactive and visually appealing web pages. I am responsible for ensuring websites are functional across various devices and browsers, optimizing performance, and implementing security measures. Collaboration
+                        with designers and clients is crucial to meet project requirements. Staying updated with
+                        emerging technologies and industry trends is essential to enhance skills and deliver innovative
+                        solutions. Continuous learning and problem-solving skills are integral as I tackle challenges and
+                        strive for excellence in the dynamic field of web development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('github')">GitHub</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Design</span><br>Web site Design</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Japan International College of Technology</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="github">
+                        <ul>
+                            <li><span>GitHub:</span><br><a href="https://github.com/PARVEZ539?tab=repositories">https://github.com/PARVEZ539?tab=repositories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" id="mar">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design involves crafting visually appealing and intuitive website layouts to optimize user experience. It combines graphic design principles with usability considerations to create engaging
+                     interfaces that effectively convey information and guide users through the site's content.</p>
+                     <a href="#">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development involves building and maintaining websites or web applications
+                     using programming languages like HTML, CSS, and JavaScript. It encompasses both 
+                     front-end and back-end development, focusing on functionality, performance, and security to create dynamic and interactive online experiences for users.</p>
+                     <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>App development involves creating software applications for mobile devices or desktops. It includes designing, coding, testing, and deploying applications using programming languages and development frameworks. App developers prioritize user experience, functionality, and performance
+                         to deliver intuitive and efficient solutions tailored to specific platforms and user needs.</p>
+                     <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- portfolio -->
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Pro Finder</h3>
+                        <p>This is a Pro Finder website. If you have a GitHub account you can search your name on search bar and show all information of your GitHub Account.</p>
+                        <a href="https://parvez539.github.io/Pro-Finder/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Form-Validator</h3>
+                        <p>This is a Form-Validator Project. This page is check your put information is valid or not. If I any information is wrong you can't access your next step.</p>
+                        <a href="https://parvez539.github.io/Form-Validator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Monster Finder</h3>
+                        <p>This is a Monster Finder Project. Find your Own Monster. Just Fun</p>
+                        <a href="https://parvez539.github.io/Monster-Finder/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-----------------Contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" id="par">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> parvezahmez33@gamil.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 080-8711-7217</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100011190123004"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter/@PPavel360/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/parvez-ahmed-3a94911b3/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                <a href="Skillsheet.pdf" download class="btn btn2">Download SKILLSHEET</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; Parvez Ahmed. Made by <i class="fa-solid fa-heart"></i> Parvez Ahmed</p>
+
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwa9RUjBK5I50ctqAXOvW9vmf2eDaFku4c1XS030pX59IpthEuXo1gSw15f4TXfshnv/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
