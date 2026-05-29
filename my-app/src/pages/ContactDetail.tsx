@@ -2,8 +2,7 @@ import { type FormEvent, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Email from "../icons/Email";
 import Phone from "../icons/Phone";
-
-const SCRIPT_URL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
+import emailjs from "emailjs-com";
 
 export default function ContactDetail() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -14,15 +13,17 @@ export default function ContactDetail() {
     if (!formRef.current) return;
 
     try {
-      await fetch(SCRIPT_URL, {
-        method: "POST",
-        body: new FormData(formRef.current),
-      });
+      const SERVICE_ID = "service_uopmdvs";
+      const TEMPLATE_ID = "template_ejeghte";
+      const USER_ID = "lniRFCLLbzM-niG6H";
+      
+      await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID);
       setMsg("Message sent successfully!");
       formRef.current.reset();
       setTimeout(() => setMsg(""), 3000);
     } catch (err) {
       console.error(err);
+      setMsg("Failed to send message. Please try again.");
     }
   };
 
@@ -109,20 +110,20 @@ export default function ContactDetail() {
             >
               <input
                 type="text"
-                name="Name"
+                name="name"
                 placeholder="Your name"
                 required
                 className="bg-gray-800 text-white placeholder-gray-500 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500"
               />
               <input
                 type="email"
-                name="Email"
+                name="email"
                 placeholder="Your Email"
                 required
                 className="bg-gray-800 text-white placeholder-gray-500 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500"
               />
               <textarea
-                name="Message"
+                name="message"
                 rows={6}
                 placeholder="Your Message"
                 className="bg-gray-800 text-white placeholder-gray-500 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 resize-none"
