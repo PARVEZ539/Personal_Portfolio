@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { services } from "../data/portfolio";
+import LeftArrow from "../icons/LeftArrow";
 
 export default function ServiceDetail() {
   const { id } = useParams<{ id: string }>();
@@ -10,7 +11,8 @@ export default function ServiceDetail() {
       <div className="min-h-screen bg-gray-900 flex flex-col items-center justify-center text-white">
         <h2 className="text-3xl font-bold mb-4">Service not found</h2>
         <Link to="/" className="text-orange-400 underline">
-          ← Back to Home
+          <LeftArrow />
+          Back to Home
         </Link>
       </div>
     );
@@ -24,7 +26,7 @@ export default function ServiceDetail() {
           to="/services"
           className="flex items-center gap-2 text-orange-400 hover:text-orange-300 mb-10 text-sm"
         >
-          <i className="fa-solid fa-arrow-left" /> Back to Services
+          <LeftArrow /> Back to Services
         </Link>
 
         {/* Header */}

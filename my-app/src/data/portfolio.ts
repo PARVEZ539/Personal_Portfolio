@@ -1,5 +1,10 @@
 import type { Service, Work } from "../types";
 import work1 from "../assets/work-1.jpg";
+import work2 from "../assets/work-5.jpg";
+import work3 from "../assets/work-2.jpg";
+import work4 from "../assets/work-3.jpg";
+import work5 from "../assets/work-4.jpg";
+import { FaCode } from "react-icons/fa6";
 
 export const services: Service[] = [
   {
@@ -64,6 +69,38 @@ export const works: Work[] = [
     description:
       "This is a Pro Finder website. If you have a GitHub account you can search your name on search bar and show all information of your GitHub Account.",
     link: "https://parvez539.github.io/Pro-Finder/",
+    facode: FaCode,
   },
-  // ...
+  {
+    image: work2,
+    title: "Banking App",
+    description:
+      "This is a Banking App. It allows users to manage their finances, view transactions, and transfer money securely.",
+    link: "https://parvez539.github.io/BankApp/",
+    facode: FaCode,
+  },
+  {
+    image: work3,
+    title: "Form-Validator",
+    description:
+      "This is a Form Validator website. It allows users to validate their form inputs in real-time, ensuring data accuracy and improving user experience.",
+    link: "https://parvez539.github.io/Form-Validator/",
+    facode: FaCode,
+  },
+  {
+    image: work4,
+    title: "Monster Finder",
+    description:
+      "This is a Monster Finder website. It allows users to search for their favorite monsters and view detailed information about them, including stats, abilities, and lore.",
+    link: "https://parvez539.github.io/Monster-Finder/",
+    facode: FaCode,
+  },
+  {
+    image: work5,
+    title: "Nature",
+    description:
+      "Nature Travels is a travel platform showcasing beautiful natural destinations, adventure experiences, and travel guides, helping users explore, plan, and enjoy memorable journeys in nature.",
+    link: "https://parvez539.github.io/Natures/",
+    facode: FaCode,
+  },
 ];

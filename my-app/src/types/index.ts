@@ -16,6 +16,7 @@ export interface Work {
   title: string;
   description: string;
   link: string;
+  facode?: React.ComponentType;
 }
 
 export type TabId = "skills" | "education" | "github";

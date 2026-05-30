@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import LeftArrow from "../icons/LeftArrow";
 
 const skills = {
   languages: [
@@ -205,7 +206,7 @@ const AboutDetail = () => {
           to="/"
           className="flex items-center gap-2 text-orange-400 hover:text-orange-300 mb-10 text-sm"
         >
-          <i className="fa-solid fa-arrow-left" /> Back to Home
+          <LeftArrow /> Back to Home
         </Link>
 
         <h1 className="text-4xl font-bold mb-10 text-center">About Me</h1>

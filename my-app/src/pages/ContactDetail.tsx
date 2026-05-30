@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import InputField from "../Layouts/InputField";
 import ContactField from "../Layouts/ContactField";
+import LeftArrow from "../icons/LeftArrow";
 
 export default function ContactDetail() {
   return (
@@ -11,7 +12,7 @@ export default function ContactDetail() {
           to="/"
           className="flex items-center gap-2 text-orange-400 hover:text-orange-300 mb-10 text-sm"
         >
-          <i className="fa-solid fa-arrow-left" /> Back to Home
+          <LeftArrow /> Back to Home
         </Link>
 
         <h1 className="text-4xl font-bold mb-10">Contact Me</h1>

@@ -1,6 +1,7 @@
 import ServiceCard from "./ServiceCard";
 import { services } from "../data/portfolio";
 import { Link } from "react-router-dom";
+import LeftArrow from "../icons/LeftArrow";
 
 export default function Services() {
   const [featured, ...rest] = services;
@@ -13,7 +14,7 @@ export default function Services() {
           to="/"
           className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 mb-12 text-sm transition-colors"
         >
-          <i className="fa-solid fa-arrow-left" /> Back to Home
+          <LeftArrow /> Back to Home
         </Link>
 
         {/* Header */}

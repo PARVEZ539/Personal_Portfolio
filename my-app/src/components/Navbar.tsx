@@ -11,7 +11,7 @@ export default function Navbar() {
     { label: "Home", to: "/", anchor: "#header" },
     { label: "About", to: "/about", anchor: null },
     { label: "Services", to: "/services", anchor: null },
-    { label: "Portfolio", to: "/", anchor: "#portfolio" },
+    { label: "Portfolio", to: "/portfolio", anchor: null },
     { label: "Contact", to: "/contact", anchor: null },
   ];
 
