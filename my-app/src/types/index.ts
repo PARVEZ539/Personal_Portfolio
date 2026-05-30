@@ -1,8 +1,9 @@
 export interface Service {
-  id: string; // e.g. "web-design"
+  id: string;
   icon: string;
   title: string;
   description: string;
+  tags?: string[];
   details: {
     overview: string;
     features: string[];

@@ -21,10 +21,10 @@ export default function ServiceDetail() {
       <div className="max-w-3xl mx-auto">
         {/* Back button */}
         <Link
-          to="/"
+          to="/services"
           className="flex items-center gap-2 text-orange-400 hover:text-orange-300 mb-10 text-sm"
         >
-          <i className="fa-solid fa-arrow-left" /> Back to Home
+          <i className="fa-solid fa-arrow-left" /> Back to Services
         </Link>
 
         {/* Header */}

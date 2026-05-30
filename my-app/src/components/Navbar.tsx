@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
-import Contact1 from "./Contact1";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,8 +9,8 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "Home", to: "/", anchor: "#header" },
-    { label: "About", to: "/", anchor: "#about" },
-    { label: "Services", to: "/", anchor: "#services" },
+    { label: "About", to: "/about", anchor: null },
+    { label: "Services", to: "/services", anchor: null },
     { label: "Portfolio", to: "/", anchor: "#portfolio" },
     { label: "Contact", to: "/contact", anchor: null },
   ];
@@ -22,7 +21,6 @@ export default function Navbar() {
         <img src={logo} alt="Logo" className="h-10" />
       </Link>
 
-      <Contact1 />
       {/* Desktop */}
       <ul className="hidden md:flex gap-8">
         {navLinks.map((link) =>
