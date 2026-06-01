@@ -1,14 +1,6 @@
 import type { Work } from "../types";
 
-export default function WorkCard({
-  image,
-  title,
-  description,
-  link,
-  facode,
-}: Work) {
-  const IconComponent = facode;
-
+export default function WorkCard({ image, title, description, link }: Work) {
   return (
     <a
       href={link}
@@ -20,7 +12,6 @@ export default function WorkCard({
       <div className="absolute inset-0 bg-orange-500/90 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col justify-center p-6">
         <h3 className="text-white font-bold text-lg mb-2">{title}</h3>
         <p className="text-white/90 text-sm mb-4">{description}</p>
-        <IconComponent />
       </div>
     </a>
   );
